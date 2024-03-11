@@ -15,6 +15,7 @@
 1.React and Firebase Integration:
 
 ⚙ User interface is created using React.
+
 ⚙ Firebase is integrated to provide user authentication and database functionality through Firestore.
 
 2.Google Authentication:
@@ -24,16 +25,19 @@
 3.Chat Rooms:
 
 ⚙ Users can enter the name of a chat room and join it.
+
 ⚙ Multiple chat rooms can be created, and users can join any of them.
 
 4.Real-time Messaging:
 
 ⚙ Users can send messages instantly within the chat rooms.
+
 ⚙ Sent messages are stored in the Firebase Firestore database.
 
 5.Firestore Database Usage:
 
 ⚙ Firebase Firestore is utilized for storing messages sent by users.
+
 ⚙ The real-time database feature allows users to see instant updates.
 
 <img src="./public/chat-App.gif"/>
