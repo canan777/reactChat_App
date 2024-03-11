@@ -3,8 +3,11 @@
 ## home page
 
 👩‍💻 This project is a chat application built with React and Google Firebase infrastructure.
+
 🗂 The project includes the integration of Firebase for Google authentication, allowing users to log in with their Google accounts.
+
 📊 The application enables users to join chat rooms by entering the room's name, facilitating communication between users.
+
 📧 Messages sent by users are stored in the Firebase Firestore database.
 
 ## 🛠 Features:
