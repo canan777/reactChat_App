@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins';
+  background: #242424;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.auth {
+  background: white;
+  color: black;
+  width: 60vw;
+  max-width: 600px;
+  height: 50vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background: #1a1a1a;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: rgb(56, 56, 56);
+    }
+  }
+
+  @media (max-width: 700px) {
+    width: 90vw;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+// Stil Sıfırlamaları
+h1 {
+  font-size: 50px;
+}
+
+button {
+  background: #1a1a1a;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+
+  &:hover {
+    filter: brightness(60%);
+  }
+}
+
+// ode seçme sayfası
+.room-page {
+  background: white;
+  color: #1a1a1a;
+  padding: 50px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+
+  input {
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.344);
+    border-radius: 8px;
+  }
+
+  & > button:last-child {
+    background: crimson;
+  }
+}
+
+// sohbet sayfası
+.chat-page {
+  background: white;
+  height: 70vh;
+  width: 70vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (max-width: 650px) {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+}
+
+.chat-page header {
+  background: #4d4c7d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  button {
+    background: #f99417;
+  }
+}
+
+.chat-page form {
+  display: flex;
+  justify-content: center;
+  background: #4d4c7d;
+  padding: 10px;
+  gap: 20px;
+
+  input {
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.57);
+  }
+
+  button {
+    background: #f99417;
+  }
+}
+
+// mesajlar alanı
+.chat-page main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 10px;
+  padding: 10px;
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #f99417;
+  }
+}
+
+.msg-other {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 40px;
+      border-radius: 50%;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.msg-user {
+  background: #f99417;
+  align-self: flex-end;
+  padding: 4px 8px;
+  border-radius: 7px 7px 0 7px;
+}
