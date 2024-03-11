@@ -10,7 +10,7 @@
 
 📧 Messages sent by users are stored in the Firebase Firestore database.
 
-## 🛠 Features:
+## 🛠 features:
 
 1.React and Firebase Integration:
 ⚙ User interface is created using React.
